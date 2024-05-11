@@ -1,0 +1,33 @@
+.list-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0px;
+    padding: 0 2em;
+    width: 90%;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0px 5px 10px rgb(199, 199, 199);
+    transition: all 0.3s ease;
+}
+
+.list-item:hover {
+    /* background-color: white; */
+    box-shadow: 0px 3px 7px rgb(205, 205, 205);
+}
+
+.checkbox {
+    background-color: white;
+    border: 3.5px solid rgb(19, 93, 255);
+    box-shadow: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    transition: all 0.2s ease;
+}
+
+.checkbox:hover {
+    background-color: rgb(90, 142, 255);
+    cursor: pointer;
+}
