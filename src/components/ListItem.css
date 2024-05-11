@@ -24,8 +24,8 @@
     background-color: white;
     border: 3.5px solid rgb(19, 93, 255);
     box-shadow: none;
-    height: 20px !important;
-    width: 20px !important;
+    height: 20px;
+    width: 20px;
     border-radius: 50%;
     transition: all 0.2s ease;
 }
@@ -45,7 +45,10 @@
     100% {transform: translateX(150%);}
 }
 
-/* @media (max-width: 376px) {
+@media (max-width: 376px) {
     .checkbox {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
     }
-  } */
+  }
