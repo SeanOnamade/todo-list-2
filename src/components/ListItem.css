@@ -6,14 +6,17 @@
     margin: 5px 0px;
     padding: 0 2em;
     width: 90%;
+    max-width: 90vw;
     background-color: white;
     border-radius: 0.5rem;
     box-shadow: 0px 5px 10px rgb(199, 199, 199);
-    transition: all 0.3s ease;
+    animation: slide-in 0.8s ease-in-out;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    box-sizing: border-box;
 }
 
 .list-item:hover {
-    /* background-color: white; */
+    background-color: rgb(239, 239, 239);
     box-shadow: 0px 3px 7px rgb(205, 205, 205);
 }
 
@@ -30,4 +33,14 @@
 .checkbox:hover {
     background-color: rgb(90, 142, 255);
     cursor: pointer;
+}
+
+@keyframes slide-in {
+    0% {transform: translateX(-150%);}
+    100% {transform: translateX(0);}
+}
+
+@keyframes slide-out {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(150%);}
 }

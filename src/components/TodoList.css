@@ -4,5 +4,9 @@
     align-items: center;
     width: 60%;
     margin: 1rem auto;
+    height: 50%;
+    flex-grow: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 

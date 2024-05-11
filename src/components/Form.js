@@ -1,5 +1,6 @@
 import "./Form.css"
 import {useState} from "react";
+import logo from '../logo.svg';
 
 
 export const Form = ({addTodo}) => {
@@ -8,12 +9,18 @@ export const Form = ({addTodo}) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        if (!text.trim()) {
+            // alert("Please enter an item!");
+            setText("");
+            return;
+        }
         addTodo(text);
         setText("");
     };
 
     return (
         <form className="form" onSubmit={handleSubmit}>
+            <img src={logo} className="App-logo" alt="logo" />
             <input 
             type="text" 
             className="textField"

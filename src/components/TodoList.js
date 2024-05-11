@@ -21,3 +21,16 @@ export const TodoList = ({todos, removeTodo}) => {
         </div>
     );
 };
+
+// export const TodoList = ({ todos, removeTodo }) => {
+//     return (
+//       <div className="todo-list">
+//         {todos.map(todo => (
+//           <div key={todo.id} className="list-item">
+//             <span>{todo.text}</span>
+//             <button onClick={() => removeTodo(todo.id)}>X</button>
+//           </div>
+//         ))}
+//       </div>
+//     );
+//   };
