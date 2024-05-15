@@ -43,6 +43,7 @@
 
 .submit-btn:hover {
     box-shadow: 0px 3px 5px #7f89e0;
+    cursor: pointer;
 }
 
 .App-logo {
